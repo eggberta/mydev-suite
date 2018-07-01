@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>MyPage</title>
+<link rel="stylesheet" href="style.css">
+<body>
+
+ <!-- Header -->
+<div class="header">
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Menue öffnen</span>
+</div>
+
+<!-- Navigation Bar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="page1/index.html" target="_blank">Page 1</a>
+  <a href="page2/index.html" target="_blank">Page 2</a>
+  <a href="page3/index.html" target="_blank">Page 3</a>
+</div>
+
+<!-- Content -->
+  <div class="main">
+      <h2>Headline</h2>
+  </div>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+     
+</body>
+</html>

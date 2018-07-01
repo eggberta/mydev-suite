@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    font-size: 110%;
+    line-height: 200%;
+}
+
+h2 {
+    color: rgb(2,113,128);
+}
+
+
+table {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    width: 100%
+}
+td {
+    border: 1px solid #999
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>MyDevSuite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.w3-theme {color:#fff !important;background-color:rgb(2,113,128) !important}
+.w3-btn {background-color:#4CAF50;margin-bottom:4px}
+.w3-code{border-left:4px solid #4CAF50}
+.myMenu {margin-bottom:9%}
+</style>
+<body>
+
+<!-- Top -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-large" style="z-index:4;">
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">☰</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuHtml')">HTML/CSS</a>
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuJavaScript')">JavaScript</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuJava')">Java</a>
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTools')">Tools</a>
+
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left" style="z-index:3;width:20%" id="mySidebar">
+  <div class="w3-bar w3-hide-large w3-large">
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuHtml')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">HTML/CSS</a>
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuJavaScript')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">JavaScript</a> 
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuJava')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">Java</a>
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuTools')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">Tools</a>
+  </div>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-right w3-xlarge w3-hide-large" title="Close Menu">×</a>
+  <div id="menuHtml" class="myMenu">
+    <div class="w3-container">
+     <h3>HTML/CSS</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="html/links/index.html" target="myFrame">Links</a>
+    <a class="w3-bar-item w3-button" href="html/grundelemente/index.html" target="myFrame">Grundelemente</a>
+    <div class="w3-container">
+      <h3>Beispiele</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="html/page1/index.html" target="myFrame">Page 1</a>
+    <a class="w3-bar-item w3-button" href="html/formular1/index.html" target="myFrame">Formular 1 </a>
+    <a class="w3-bar-item w3-button" href="html/transition1/index.html" target="myFrame">Transition</a>
+       <a class="w3-bar-item w3-button" href="html/roboter/index.html" target="myFrame">Roboter</a>
+          <a class="w3-bar-item w3-button" href="html/bootstrap1/index.html" target="myFrame">Bootstrap 1</a>
+    <a class="w3-bar-item w3-button" href="html/menu1/index.html" target="myFrame">Menu 1</a>
+    <a class="w3-bar-item w3-button" href="html/menu2/index.html" target="myFrame">Menu 2</a>
+    <a class="w3-bar-item w3-button" href="html/menu3/index.html" target="myFrame">Menu 3</a>
+  </div>
+  <div id="menuJavaScript" class="myMenu" style="display:none">
+    <div class="w3-container">
+      <h3>JavaScript</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="javascript/index.html" target="myFrame">Links</a>
+    <a class="w3-bar-item w3-button" href="javascript/index.html" target="myFrame">Grundelemente</a>
+    <div class="w3-container">
+       <h3>Beispiele</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="javascript/datumsanzeige/index.html" target="myFrame">Datumsanzeige</a>
+    <a class="w3-bar-item w3-button" href="javascript/ex1/index.html" target="myFrame">Beispiel 1</a>
+    <a class="w3-bar-item w3-button" href="javascript/ex2/index.html" target="myFrame">Beipsiel 2</a>
+    <a class="w3-bar-item w3-button" href="javascript/ex3/index.html" target="myFrame">Beispiel 3</a>
+    <a class="w3-bar-item w3-button" href="javascript/ex4/index.html" target="myFrame">Beispiel 3</a>
+    <a class="w3-bar-item w3-button" href="javascript/ex5/index.html" target="myFrame">Beispiel 4</a>
+  </div>
+
+  <div id="menuJava" class="myMenu" style="display:none">
+    <div class="w3-container">
+      <h3>Java</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="java/links/index.html" target="myFrame">Links</a>
+    <a class="w3-bar-item w3-button" href="java/grundelemente/index.html" target="myFrame">Grundelemente</a>
+    <div class="w3-container">
+       <h3>Beispiele</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="java/ex1/index.html" target="myFrame">Beispiel 1</a>
+    <a class="w3-bar-item w3-button" href="java/ex2/index.html" target="myFrame">Beipsiel 2</a>
+    <a class="w3-bar-item w3-button" href="java/ex3/index.html" target="myFrame">Beispiel 3</a>
+    <a class="w3-bar-item w3-button" href="java/ex4/index.html" target="myFrame">Beispiel 3</a>
+    <a class="w3-bar-item w3-button" href="java/ex5/index.html" target="myFrame">Beispiel 4</a>
+  </div>
+  <div id="menuTools" class="myMenu" style="display:none">
+    <div class="w3-container">
+      <h3>Tools</h3>
+    </div>
+    <a class="w3-bar-item w3-button" href="tools/links/index.html" target="myFrame">Links</a>
+    <a class="w3-bar-item w3-button" href="tools/intellij/index.html" target="myFrame">IntelliJ</a>
+    <a class="w3-bar-item w3-button" href="tools/terminal/index.html" target="myFrame">Terminal</a>
+    <a class="w3-bar-item w3-button" href="tools/sublimetext/index.html" target="myFrame">Sublime Text</a>
+   </div>
+
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
+<div class="w3-main w3-container" style="margin-left:270px;margin-top:60px;">
+  <iframe src="startseite/index.html" name="myFrame" scrolling="yes"></iframe>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Script to open and close the sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+function w3_show_nav(name) {
+    document.getElementById("menuHtml").style.display = "none";
+    document.getElementById("menuJavaScript").style.display = "none";
+    document.getElementById("menuJava").style.display = "none";
+    document.getElementById("menuTools").style.display = "none";
+    document.getElementById(name).style.display = "block";
+    w3-open();
+}
+</script>
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+w3CodeColor();
+</script>
+</body>
+</html>
